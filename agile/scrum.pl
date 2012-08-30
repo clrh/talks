@@ -1,5 +1,6 @@
 # /home/mc/src/perl/5/lib/revealer/bin/revealer
 
+#reveal {
 S {"ready?"}
 , section { p{"BibLibre"}
         , p{"Formation interne, 31 août"}
@@ -18,12 +19,12 @@ S {"ready?"}
 # "Utilisation de règles génériques permettant de créer un environnement agile pour un projet"
 
 , S { "Processus empirique - 3 piliers" # se base sur l'expérience du terrain
-    , FP "Transparence", # langage commun, rendre visible, définir des règles (ex: done), s'assurer du même niveau d'information
+    , FP "Transparence" # langage commun, rendre visible, définir des règles (ex: done), s'assurer du même niveau d'information
     , "Inspection" # regarder derrière, analyser, étudier, mesurer le progres
     , "Adaptation" # adapter le processus, rétrospective
 }
 , S { "3 axes de présentation" # 
-    , FUL "Artefacts", # 
+    , FUL "Artefacts" # 
     , "Rituels" #
     , "Equipe" #
 }
@@ -35,7 +36,7 @@ S {"ready?"}
 }
 
 , S { "I-1 - Artefacts - Backlog produit" # 
-    , FUL "~ Iceberg",
+    , FUL "~ Iceberg"
     , "Liste des user stories" 
     , "Priorisée" #
     , "Estimée (grosse maille)" #
@@ -188,3 +189,4 @@ S {"ready?"}
 , S { "Références" # image ?
     , FUL "[[veille:claire:agilite]]" #
 }
+#}
