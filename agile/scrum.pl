@@ -6,27 +6,34 @@ S {"ready?"}
 }
 
 , S { "Scrum"
-    , h2{"un cadre de projet agile"}
-    # todo img fun rugby et ?
+    , h3{"un cadre de projet agile"}
+    , img("img/melee_fromwikipedia.jpg")
 }
-, S { "Principes de Scrum"
-    , FP "Equipe responsable, en auto-organisation",
-    , "Avancement du produit par une série de « sprints » d’un mois ou moins"
-    , "Exigences définies comme des éléments d’une liste appelée « backlog du produit »"
-    , "Pas de prescription de pratiques d’ingénierie"
-    , "Utilisation de règles génériques permettant de créer un environnement agile pour un projet"
-}
+
+# "Principes de Scrum"
+# "Equipe responsable et auto-organisée",
+# "Avancement du produit par une série de « sprints » d’un mois ou moins"
+# "Exigences définies comme des éléments d’une liste appelée « backlog du produit »"
+# "Pas de prescription de pratiques d’ingénierie"
+# "Utilisation de règles génériques permettant de créer un environnement agile pour un projet"
+
 , S { "Processus empirique - 3 piliers" # se base sur l'expérience du terrain
     , FP "Transparence", # langage commun, rendre visible, définir des règles (ex: done), s'assurer du même niveau d'information
     , "Inspection" # regarder derrière, analyser, étudier, mesurer le progres
     , "Adaptation" # adapter le processus, rétrospective
 }
 , S { "3 axes de présentation" # 
-    , FP "1/ Artefacts", # 
-    , "2/ Rituels" #
-    , "3/ Equipe" #
+    , FUL "Artefacts", # 
+    , "Rituels" #
+    , "Equipe" #
 }
-# TODO insert schéma général
+, S { ""
+    , img ("img/AgileGrenoble_s_fromclauredeaubrypatricecourtiade.jpg")
+}
+, S { "Vue d'ensemble"
+    , img ("img/VueGlobaleScrum.png")
+}
+
 , S { "I-1 - Artefacts - Backlog produit" # 
     , FUL "~ Iceberg",
     , "Liste des user stories" 
@@ -47,9 +54,9 @@ S {"ready?"}
     , "Testable" # Confirmation
 }
 , S { "(User story - Forme)" # 
-    , FOL "En tant que <Rôle Utilisateur>", #
-    , "Je peux <But>" #
-    , "Si bien que <Justification>" #
+    , FOL "En tant que !!Rôle Utilisateur!!", #
+    , "Je peux !!But!!" #
+    , "Si bien que !!Justification!!" #
 }
 
 , S { "I-2 - Artefacts - Backlog de sprint" # 
@@ -57,18 +64,33 @@ S {"ready?"}
     , "Engagement pour un sprint" 
     , "Estimé en équipe" #
 }
-#image "sous backlog"
-
-, S { "I-3 - Artefacts - Taskboard" # 
-# image
+, S { "Sous partie du backlog produit"
+    , img ("img/backlogs_frombewise.jpg")
 }
 
-, S { "I-4 - Artefacts - Burdown(up) chart" # 
-# image
+, S { "I-3 - Artefacts - Taskboard" # 
+    , FUL "~Radiateur d'information"
+    , "Rendre visible"
+    , "Partager la vision"
+}
+, S { ""
+    , img ("img/taskboard1.jpg")
+}
+, S { ""
+    , img ("img/taskboard2.jpg")
+}
+, S { ""
+    , img ("img/taskboard3.jpg")
+}
+
+, S { "I-4 - Artefacts - Burdown chart" # Burnup existe
+    , img ("img/SampleBurndownChart.jpg")
+    , FP "Montrer l'avancement"
 }
 
 , S { "I-5 - Artefacts - Incrément de logiciel" # 
-# image
+    , img ("img/increment_fromagilarium.jpg")
+    , FP "Terminé et livrable"
 }
 
 , S { "II-1 - Rituels - Sprint" # n'est pas un "rituel", renommer "rituel en process" ?
@@ -77,6 +99,10 @@ S {"ready?"}
     , "Imperméable" # pas d'interruption! SM gardien 
     , "Livraison d'un incrément de produit <strong>terminé</strong>"
 }
+, S { ""
+    , img ("img/dessin_sprint_claire.jpg")
+}
+
 #image "sprint"
 , S { "II-2 - Rituels - Planification" # 
     , FUL "<u>Au début du sprint</u>"
@@ -120,6 +146,9 @@ S {"ready?"}
     , "2. Générer des idées"
     , "3. Décider quoi faire"
 }
+, S { "Vue d'ensemble"
+    , img ("img/VueGlobaleScrum.png")
+}
 
 
 , S { "III-1 - Equipe - principes" #
@@ -131,10 +160,9 @@ S {"ready?"}
     , "5 +/- 2"
 }
 , S { "III-2 - Equipe - composition" # image ?
-#image
+    , img ("img/team_from.jpg")
 }
 , S { "III-3 - Equipe - Equipiers" # image ?
-    , FUL "" #
 }
 , S { "III-4 - Equipe - Product Owner" # image ?
     , FUL "A et partage une vision produit"
@@ -153,33 +181,10 @@ S {"ready?"}
     , "Facilite les rituels"
 }
 
-#################################################################
-# , S { "Ti" # Puces 1/2/3 
-#     , FOL "Test OL", # 
-#     , "Test OL2" #
-#     , "Test OL2" #
-# }
-# , S { "Ti2" # Puces simples
-#     , FUL "Test UL", # 
-#     , "Test <strong>UL2</strong>" #
-#     , "Test UL2" #
-# }
-#3P
-#People
-#Process
-#Produit
+, S { "Subway again..." # image ?
+    , img ("img/subway_fromagilealliance.png")
+}
 
-#, section {
-#    p{" "}
-#    , h1 {"Le futur"}
-#    , h2{"wip, roadmap, cartons"} 
-#}
-#, S { "des middlewares, un builder"
-#    , perl q[
-#processor {
-#    reader qw< from data/*.xml template conf/migration.yml >;
-#    enable qw< lint::unimarc >;
-#    enable qw< lint::sudoc   >;
-#    enable qw< encode::utf8 >;
-#    writer qw< to livrables/* format iso2709 >;
-#} ] }
+, S { "Références" # image ?
+    , FUL "[[veille:claire:agilite]]" #
+}
