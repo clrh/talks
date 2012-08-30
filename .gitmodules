@@ -1,0 +1,6 @@
+[submodule "revealer"]
+	path = revealer
+	url = git://github.com/eiro/revealer.git
+[submodule "reveal.js"]
+	path = reveal.js
+	url = git://github.com/hakimel/reveal.js.git
