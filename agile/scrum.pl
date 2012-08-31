@@ -94,6 +94,10 @@ S {"ready?"}
     , FP "Terminé et livrable"
 }
 
+, S { "gni ?"
+    , img ("img/pigs_and_chicken1.gif")
+}
+
 , S { "II-1 - Rituels - Sprint" # n'est pas un "rituel", renommer "rituel en process" ?
     , FUL "Contenant de temps = Timebox",
     , "Durée 1 mois ou moins" # j'aime bien 15 jours
@@ -151,6 +155,12 @@ S {"ready?"}
     , img ("img/VueGlobaleScrum.png")
 }
 
+, S { "pigs & chicken"
+    , img ("img/pig_and_chicken3.jpg")
+}
+, S { "pigs & chicken"
+    , img ("img/pig_and_chicken2.jpg")
+}
 
 , S { "III-1 - Equipe - principes" #
     , FUL "Dédiée" # Focus, concentration
@@ -186,6 +196,15 @@ S {"ready?"}
     , img ("img/subway_fromagilealliance.png")
 }
 
+, S { "Et après ?" # image ?
+    , FUL "Agile Tour" #
+    , "international http://at2012.agiletour.org"
+    , "beaucoup de villes en France"
+    , "Marseille: 11 octobre http://www.esprit-agile.com"
+    , "Paris: 20 novembre"
+    , "Montpellier: 29 novembre"
+    , "Agile Grenoble: 8 novembre http://2012.agile-grenoble.org/"
+}
 , S { "Références" # image ?
     , FUL "[[veille:claire:agilite]]" #
 }
